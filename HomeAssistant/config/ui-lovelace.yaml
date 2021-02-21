@@ -1,0 +1,46 @@
+title: Force Indoor Farming Universal
+views:
+  - title: F I F U
+    path: FIFU
+    theme: LightGreen
+    icon: 'mdi:box'
+    panel: false
+    badges: []
+    cards:
+      - type: entities
+        entities:
+          - entity: input_boolean.terrarium1
+          - entity: input_boolean.general_exhaust
+          - entity: input_boolean.general_co2
+          - entity: input_boolean.general_logger
+        theme: LightGreen
+        title: Systems General
+        state_color: true
+        show_header_toggle: false
+      - type: entities
+        entities:
+          - entity: switch.led1
+          - entity: input_datetime.mytimeon_light1
+          - entity: input_datetime.mytimeoff_light1
+          - entity: sensor.led1_si7021_temperature
+          - entity: input_number.temp_min
+          - entity: input_number.temp_max
+          - entity: switch.heating
+          - entity: switch.exhaustion
+          - entity: switch.purifier
+          - entity: sensor.led1_si7021_humidity
+          - entity: input_number.humid_target
+          - entity: input_number.humid_tolerance
+          - entity: switch.dehumidifier
+        title: Terrarium 1
+        state_color: true
+        show_header_toggle: false
+      - type: entities
+        entities:
+          - entity: switch.co2
+          - entity: input_number.co2_min
+          - entity: input_number.co2_max
+          - entity: input_number.co2_manually
+          - entity: switch.fanauxiliar
+        show_header_toggle: false
+        title: Co2 System

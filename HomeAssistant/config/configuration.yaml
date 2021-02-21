@@ -1,0 +1,110 @@
+homeassistant:
+  name: F I F U
+  unit_system: metric
+  time_zone: Europe/London
+  internal_url: !secret internalurl
+  
+frontend:
+  themes: !include themes.yaml
+
+lovelace:
+  mode: yaml
+  
+########################
+# FIFU - INPUTS fields #
+input_boolean:
+  terrarium1:
+    name: Terrarium 1
+    icon: mdi:dog
+  terrarium2:
+    name: Terrarium 2
+    icon: mdi:cat
+  general_exhaust:
+    name: General Exhaustion
+    icon: mdi:fan
+  general_co2:
+    name: Co2 General
+    icon: mdi:gas-cylinder
+  general_logger:
+    name: Logger
+    icon: mdi:math-log
+
+input_datetime:
+  mytimeon_light1:
+    name: Time Light1 On
+    has_date: false
+    has_time: true
+    icon: mdi:clock
+  mytimeoff_light1:
+    name: Time Light1 Off
+    has_date: false
+    has_time: true
+    icon: mdi:clock
+  mytimeon_light2:
+    name: Time Light2 On
+    has_date: false
+    has_time: true
+    icon: mdi:clock
+  mytimeoff_light2:
+    name: Time Light2 Off
+    has_date: false
+    has_time: true
+    icon: mdi:clock
+
+input_number:
+  humid_target:
+    name: Humidity Target
+    icon: mdi:water-percent
+    unit_of_measurement: "%"
+    initial: 50
+    min: 10
+    max: 100
+    step: 1
+  humid_tolerance:
+    name: Humidity Tolerance
+    icon: mdi:water-percent
+    unit_of_measurement: "%"
+    initial: 10
+    min: 0
+    max: 30
+    step: 1
+  temp_min:
+    name: Temp. MIN
+    icon: mdi:temperature-celsius
+    unit_of_measurement: "Cº"
+    initial: 22
+    min: 15
+    max: 30
+    step: 1
+  temp_max:
+    name: Temp. MAX
+    icon: mdi:temperature-celsius
+    unit_of_measurement: "Cº"
+    initial: 28
+    min: 10
+    max: 40
+    step: 1
+  co2_min:
+    name: Co2 MIN
+    icon: mdi:molecule-co2
+    unit_of_measurement: "PPM"
+    initial: 200
+    min: 100
+    max: 2000
+    step: 50
+  co2_max:
+    name: Co2 MAX
+    icon: mdi:molecule-co2
+    unit_of_measurement: "PPM"
+    initial: 1200
+    min: 100
+    max: 2000
+    step: 50
+
+############################
+# Tasmoadmin Lateral Panel #
+panel_iframe:
+  tasmoadmin:
+    title: TasmoAdmin
+    icon: mdi:lightbulb-on
+    url: http://192.168.1.117:9541
