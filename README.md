@@ -3,6 +3,10 @@ I started this project in the day I was forced to put my cactus inside of house,
 
 With this, you will be able to Set up a Light Scheduling, Ventilation and heating system all working together using sensors.
 
+*Updates:*
+ - v1.3 - Add NodeMCU v3 CP2102 and Sensor MH-Z19B
+ 
+ - v1.2 - Update NodeRed Flows
 
 *Hardware Used:*
  - 1x FTDI232 controller
@@ -12,13 +16,14 @@ With this, you will be able to Set up a Light Scheduling, Ventilation and heatin
  - 1x SonOff TH16
  - 1x SonOff Temperature/Humidity Sensor
  - Some extra material to do this connections (cabling...connectors..plugs..wooden-base..) 
-
+ - 1x MH-Z19B Sensor (ATT. I have got a fake one. but lucky works fine)
+ - 1x NodeMCU v3 ESP8266
 
 *Software Used:*
  - Windows x64
- - Home Assistant OS
  - Virtual Box
- - Tasmotizer
+ - Home Assistant OS
+ - Tasmotizer and binary files
 
 *HomeAssistant Integrations:*
  - Tasmota
@@ -49,11 +54,9 @@ With this, you will be able to Set up a Light Scheduling, Ventilation and heatin
 
 
 # ToDo List:
- - 1x MH-Z19B Sensor 
- - 1x NodeMCU v3 ESP8266
- - 1x Set Dupont cables (female-female)
+
  - Alarm Smoke Sensor
- - More bot commands
+ - More/Improve bot commands
  - Suggestions...
 
 
@@ -61,7 +64,7 @@ With this, you will be able to Set up a Light Scheduling, Ventilation and heatin
 To use this you need read and follow this steps:
  - Install HA: https://www.home-assistant.io/installation/
  - Recover Snapshot: https://community.home-assistant.io/t/how-to-restore-a-snapshot/227688
- - Flashing SonOffs: https://tasmota.github.io/docs/Getting-Started/
+ - Flashing SonOffs/MH-Z19B: https://tasmota.github.io/docs/Getting-Started/
  - More info... Check below
 
 
@@ -71,13 +74,15 @@ To use this you need read and follow this steps:
  - Network: 192.168.1.XXX
  - SSID/BSSID: tomatoe
  - WiFi-Passw: raspberry.69
- - Final TIP! YOU NEED PROTECT your Tasmota Devices with password ;) 
+ - Final TIP! YOU SHOULD PROTECT your Tasmota Devices with password ;) 
  
 # Other Links NOT MISSING!
  - https://github.com/tasmota/tasmotizer
  - https://ftdichip.com/products/ft232rq/
  - https://github.com/danmed/TasmoBackupV1.git
  - https://www.home-assistant.io/installation/
+ - https://nodered.org/docs/user-guide/editor/workspace/import-export
+ - https://emariete.com/en/home-co2-meter/
 
 
 # Help improoving :)

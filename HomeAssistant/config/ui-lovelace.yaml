@@ -40,7 +40,7 @@ views:
           - entity: switch.co2
           - entity: input_number.co2_min
           - entity: input_number.co2_max
-          - entity: input_number.co2_manually
+          - entity: sensor.tasmota_mhz19b_carbondioxide
           - entity: switch.fanauxiliar
         show_header_toggle: false
         title: Co2 System
