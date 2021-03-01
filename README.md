@@ -4,6 +4,8 @@ I started this project in the day I was forced to put my cactus inside of house,
 With this, you will be able to Set up a Light Scheduling, Ventilation and heating system all working together using sensors.
 
 *Updates:*
+ - v1.4 - Update NodeRed Flows
+ 
  - v1.3 - Add NodeMCU v3 CP2102 and Sensor MH-Z19B
  
  - v1.2 - Update NodeRed Flows
