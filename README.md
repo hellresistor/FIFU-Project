@@ -4,7 +4,7 @@ I started this project in the day I was forced to put my cactus inside of house,
 With this, you will be able to Set up a Light Scheduling, Ventilation and heating system all working together using sensors.
 
 *Updates:*
- - v1.6 - Update NodeRed Flows
+ - v1.7 - Update NodeRed Flows
 
 *Hardware Used:*
  - 1x FTDI232 controller
@@ -41,6 +41,7 @@ With this, you will be able to Set up a Light Scheduling, Ventilation and heatin
 *NodeRed palletes:*
  - telegrambot-home
  - schedex
+ - looptimer-advanced
 
 *Themes:*
  - LightGreen
@@ -70,11 +71,13 @@ To use this you need read and follow this steps:
  - Usernames: fifu
  - Passwords: password
  - Network: 192.168.1.XXX
- - SSID/BSSID: tomatoe
+ - SSID/BSSID: tomato
  - WiFi-Passw: raspberry.69
  - Final TIP! YOU SHOULD PROTECT your Tasmota Devices with password ;) 
  
 *Historic Updates:*
+ - v1.6 - Update NodeRed Flows
+
  - v1.5 - Update NodeRed Flows
  
  - v1.4 - Update NodeRed Flows
